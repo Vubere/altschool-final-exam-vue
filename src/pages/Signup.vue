@@ -72,27 +72,27 @@ export default {
       const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
       const { name, email, password, confirmPassword } = this.form;
       if (!name) {
-        this.error = "Name is required";
+        this.error.name = "Name is required";
         isValid = false;
       }
       if (!email) {
-        this.error = "Email is required";
+        this.error.email = "Email is required";
         isValid = false;
       }
       if (!emailPattern.test(email)) {
-        this.error = "Email is invalid";
+        this.error.email = "Email is invalid";
         isValid = false;
       }
       if (!password) {
-        this.error = "Password is required";
+        this.error.password = "Password is required";
         isValid = false;
       }
       if (password.length < 6) {
-        this.error = "Password must be at least 6 characters";
+        this.error.password = "Password must be at least 6 characters";
         isValid = false;
       }
       if (password !== confirmPassword) {
-        this.error = "Passwords do not match";
+        this.error.confirmPassword = "Passwords do not match";
         isValid = false;
       }
       setTimeout(() => {
