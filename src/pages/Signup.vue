@@ -38,7 +38,7 @@
       </div>
       <div>
         <label for="confirm-password">Confirm Password</label>
-{{error.confirmName}}
+{{error.confirmPassword}}
         <input
           type="password"
           placeholder="Confirm Password"
