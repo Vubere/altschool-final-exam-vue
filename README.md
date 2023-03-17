@@ -1,4 +1,5 @@
 # alt-school-vue-exam
+Done in fulfillment of the requirements for altschools africa's third and final exam.
 
 ## Project setup
 ```
