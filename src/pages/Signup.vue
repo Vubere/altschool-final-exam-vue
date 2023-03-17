@@ -5,6 +5,7 @@
     <form @submit="submit">
       <div>
         <label for="name">Name</label>
+{{error.name}}
         <input
           type="text"
           placeholder="Name"
@@ -15,6 +16,7 @@
       </div>
       <div>
         <label for="email">Email</label>
+{{error.email}}
         <input
           type="email"
           name="email"
@@ -25,6 +27,7 @@
       </div>
       <div>
         <label for="password">Password</label>
+{{error.password}}
         <input
           type="password"
           placeholder="Password"
@@ -35,6 +38,7 @@
       </div>
       <div>
         <label for="confirm-password">Confirm Password</label>
+{{error.confirmName}}
         <input
           type="password"
           placeholder="Confirm Password"
